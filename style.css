@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
+
+
+body{
+    font-family: "Gilda Display";
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.navbar-brand img{
+    height: 5vw;
+    width: 5vw;
+}
+
+.navbar {
+    background-color: #e6e8d4;
+}
+
+header {
+    height: 50vw;
+    background-image: url("/assets/header.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn {
+    background-color: #e6e8d4;
+    color: black;
+    border: none;
+}
+
+.images .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images .container img {
+    height: 12vw;
+    border-radius: 1vw;
+
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+li {
+    display: flex;
+    list-style: none;
+}
+
+li i {
+    margin-right: 1vw;
+}
+
+
+.about {
+    background-color:rgba(230, 232, 212, 0.6);
+    height: 30vw;
+}
+
+.about h2 {
+    padding-top: 5vw;
+}
+
+nav {
+    position: sticky;
+}
