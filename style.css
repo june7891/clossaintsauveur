@@ -1,10 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 body{
     font-family: "Gilda Display";
     text-decoration: none;
-    scroll-behavior: smooth;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.navbar-brand {
+    margin-right: 0;
 }
 
 .navbar-brand img{
@@ -12,27 +27,68 @@ body{
     width: 5vw;
 }
 
-.navbar {
+
+
+#navbar {
     background-color: #e6e8d4;
+    position: fixed;
+    top: -120px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 999;
 }
 
 header {
-    height: 50vw;
-    background-image: url("/assets/header.jpg");
-    background-size: 100%;
+    height: 70vw;
+    width: 100%;
+    background-image: url('assets/images/header.webp');
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    opacity: 0.9;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    position: relative;
 }
 
+.scroll-down {
+    position: absolute;
+    left: 48%;
+    bottom: 35%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.scroll-down:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+.scroll-down i {
+    font-size: 3vw;
+    color:#e6e8d4;
+}
+
+header img {
+margin-top: 11vw;
+height: 10vw;
+}
+
+
 h1 {
-    font-size: 5vw;
+    margin-top: 4vw;
+    font-size: 6vw;
     text-transform: uppercase;
     text-align: center;
+    color:#5C5A55;
+    line-height: 0.8;
+}
+span {
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn {
@@ -43,15 +99,31 @@ h1 {
 
 .images .container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: 34vh;   
 }
 
-.images .container img {
-    height: 12vw;
-    border-radius: 1vw;
-
+.images p {
+    font-size: 1.3vw;
 }
 
+.image {
+    position:relative;
+    width: 22vw;
+    height: 27vw;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+.images .container .image img {
+    width: 100%;
+}
+
+/* .image:hover img {
+    transform: scale(1.1);
+} */
 
 ul {
     display: flex;
@@ -69,14 +141,263 @@ li i {
 
 
 .about {
-    background-color:rgba(230, 232, 212, 0.6);
-    height: 30vw;
+    height: 100vh;
+    background-image: url('assets/images/facade.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+
 }
 
 .about h2 {
-    padding-top: 5vw;
+    font-size: 2.2vw;
+    font-weight: bold;
+    margin-bottom: 2vw;
 }
 
-nav {
-    position: sticky;
+.about .presentation {
+    padding: 1.5vw 1vw;
+    text-align: center;
+    line-height: 1.2;
+    background-color: rgba(230, 232, 212, 0.9);
+    width: 35%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    
 }
+
+.about .presentation p {
+    font-size: 1.3vw;
+}
+
+figcaption {
+    background-color:  #e6e8d4;
+    color: #111;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+
+.contact p {
+    font-size: 1.3vw;
+}
+
+.contact textarea {
+    height: 10vw;
+}
+
+.footer-info {
+    display: flex;
+    margin-left: 6vw;
+
+}
+
+.footer-info img {
+    height: 10vw;
+}
+
+
+
+
+/*calendar styling*/
+
+.fc .fc-button-primary {
+    background-color:#e6e8d4;
+    border-color: #e6e8d4;
+}
+
+.fc .fc-button:disabled {
+    background-color:#e6e8d4;
+    border-color: #e6e8d4;
+    color: #111;
+    opacity: 1;
+}
+.fc .fc-button:not(:disabled) {
+    color: #111;
+    opacity: 1;
+}
+.fc-icon {
+    color: black;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 1.2vw;
+}
+
+
+/* Mentions legales styling*/
+
+.titles {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+
+
+label {
+    font-size: 1vw;
+}
+
+
+@media screen and (max-width: 500px){
+
+    .navbar-brand img{
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .navbar li {
+        font-size: 8vw;
+        justify-content: center;
+    }
+
+    header {
+        height: 100vh;
+        background-image: url('assets/header.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-attachment: fixed; */
+    }
+
+
+header img {
+    margin-top: 32vw;
+    height: 20vw;
+}
+
+
+h1 {
+    margin-top: 4vw;
+    font-size: 7vw;
+}
+
+span {
+    font-size: 4vw;
+}
+     
+
+/* about section */
+
+.about {
+    height: 100vh;
+    background-attachment:scroll;
+}
+
+.about h2 {
+    font-size: 2.9vw;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+
+.about .presentation {
+    padding: 1.5vw 1vw;
+    text-align: center;
+    line-height: 1.2;
+    background-color: rgba(230, 232, 212, 0.9);
+    width: 45%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    
+}
+
+.about .presentation p {
+    font-size: 2.3vw;
+}
+
+
+.images p {
+    font-size: 2.5vw;
+}
+
+.image{
+    width: 60vw;
+    height: 50vw;
+}
+
+.images .container {
+    display: block;
+    height: 100vh;
+
+}
+
+.contact p {
+    font-size: 2.5vw;
+}
+label {
+    font-size: 3vw;
+}
+
+.contact textarea {
+    height: 30vw;
+}
+
+.calendar {
+    width: 100%;
+}
+.fc .fc-view {
+    width: 360px;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 4vw;
+}
+
+.fc .fc-button {
+   padding: 0.2em 0.32em;
+   font-size: 0.5em;
+}
+
+
+.titles {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+}
+
+
+.footer-info {
+    display: block;
+    margin-left: 6vw;
+
+}
+
+.footer-info img {
+    height: 30vw;
+}
+
+.contact {
+    margin-bottom: 10vw;
+}
+
+.scroll-down {
+ 
+
+    bottom: 10%;
+
+}
+
+
+.scroll-down i {
+    font-size: 6vw;
+}
+
+
+
+
+
+}
+    
