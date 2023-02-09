@@ -5,3 +5,20 @@
 #logo {
     height: 50px;
 }
+
+.delete-btn {
+    border: none;
+    background: none;
+}
+
+.btn-primary{
+    background-color: #e6e8d4;
+    border-color: #e6e8d4;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: none;
+    color: black;
+    border-color: #e6e8d4;
+}

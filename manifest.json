@@ -1,15 +1,7 @@
 {
-    "short_name": "",
-    "name": "Clos Saint Sauveur",
-    "icons": [
-    {
-      "src":"",
-      "sizes": "",
-      "type": ""
-    }
-   ],
-   "start_url": "",
-   "background_color": "",
-   "theme_color": "e6e8d4",
-   "display": ""
+    "short_name": "Clos Saint Sauveur",
+    "name": "Guest House Clos Saint Sauveur",
+   "start_url": "https://clossaintsauveur.com",
+   "background_color": "#FFFFFF",
+   "theme_color": "#e6e8d4"
   }

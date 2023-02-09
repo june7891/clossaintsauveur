@@ -8,14 +8,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav">
                 <?php if(!Security::verifAccessSession()) :?>
-                <a class="nav-link" href="<?= URL?>css-admin/login">Se connecter</a>
+                <a class="nav-link" href="<?= URL?>css-admin">Se connecter</a>
 
                 <?php else :?>
 
-                <a class="nav-link" href="<?= URL?> css-admin/dashboard">Accueil</a>
-                <a class="nav-link" href="<?= URL?> css-admin/reservations">Réservations</a>
+                <a class="nav-link" href="<?= URL?>dashboard">Accueil</a>
+                <a class="nav-link" href="<?= URL?> reservations">Réservations</a>
 
-                <a class="nav-link" href="<?= URL?> css-admin/logout">Se déconnecter</a>
+                <a class="nav-link" href="<?= URL?> logout">Se déconnecter</a>
 
                 <?php endif?>
 

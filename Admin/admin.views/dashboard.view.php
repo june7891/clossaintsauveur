@@ -3,7 +3,7 @@
 
 <?php
 if(!$_SESSION) {
-    header('Location: ' . URL . "css-admin/login");
+    header('Location: ' . URL . "css-admin");
 }
 ?>
 

@@ -3,15 +3,21 @@
 
 session_start();
 
+if (!isset($_SESSION["lang"] ))
+    $_SESSION["lang"] = "fr";
+else if (isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_GET['lang'])) {
+    if ($_GET['lang'] == "fr")
+        $_SESSION['lang'] = "fr";
+    else if ($_GET['lang'] == "en")
+        $_SESSION['lang'] = "en";
+   }
 
-$defaultLang = 'fr';
 
 
-//If there was no language initialized, (empty $_SESSION['lang']) then
-if (empty($_SESSION["lang"])) {
-    //Set default lang if there was no language
-    $_SESSION["lang"] = $defaultLang;
-}
+
+
+// echo "Language:" . $_SESSION['lang']; 
+
 
 define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" : "http") .
     "://$_SERVER[HTTP_HOST]$_SERVER[PHP_SELF]"));
@@ -19,7 +25,6 @@ define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" :
 
     require_once "Admin/Controllers/AdminController.php";
     require_once "controllers/MainController.php";
-
 
     $mainController = new MainController();
     $adminController = new AdminController();
@@ -43,40 +48,35 @@ try {
             case "sendReservationMessage":
                 $mainController->sendMessage();
                 break;
-            case 'css-admin':
-                switch ($url[1]){
-                    case "login":
-                        $adminController->getLoginPage();
-                        break;
-                    case "logout":
-                        $adminController->logout();
-                        break;
-                    case "dashboard":
-                        $adminController->getAdminPage();
-                        break;
-                    case "connection":
-                        $adminController->connection();
-                        break;
-                    case "reservations":
-                        $adminController->getReservations();
-                        break;
-                    case "addDisponibility":
-                        $adminController->addDisponibility();
-                        break;
-                    case "addReservation":
-                        $adminController->addReservation();
-                        break;
-                    case "removeReservation":
-                        $adminController->removeReservation();
-                        break;
-                    case "removeDisponibility":
-                        $adminController->removeDisponibility();
-                        break;
-                }  
-                
+            case "css-admin":
+                $adminController->getLoginPage();
+                break;
+            case "logout":
+                $adminController->logout();
+                break;
+            case "dashboard":
+                $adminController->getAdminPage();
+                break;
+            case "connection":
+                $adminController->connection();
+                break;
+            case "reservations":
+                $adminController->getReservations();
+                break;
+            case "addDisponibility":
+                $adminController->addDisponibility();
+                break;
+            case "addReservation":
+                $adminController->addReservation();
+                break;
+            case "removeReservation":
+                $adminController->removeReservation();
+                break;
+            case "removeDisponibility":
+                $adminController->removeDisponibility();
                 break;
             default:
-            throw new Exception("La page n'existe pas");
+                throw new Exception("La page n'existe pas");
 
             }    
     }

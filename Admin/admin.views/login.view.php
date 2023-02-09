@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="user-card">
 
-            <form method="POST" action="<?= URL ?>css-admin/connection">
+            <form method="POST" action="<?= URL ?>connection">
             <?php flash('login')?>
                 <div class="form-group">
                     <label for="pseudo">Identifiant</label>

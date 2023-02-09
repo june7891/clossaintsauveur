@@ -1,5 +1,5 @@
-
- 
+<?php require_once "languages/" . $_SESSION['lang'] . ".php";
+ ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,18 +19,14 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8bff0007f7.js" crossorigin="anonymous"></script>
-    <title>Maison d'hôte Gironde - Clos Saint Sauveur</title>
+    <title><?php echo $lang['title'] ?></title>
 </head>
 <body>
 
-<?php if ($_GET['lang'] == 'fr'):
+<?php
+
  include_once 'navbar.view.php';?>
 
- <?php else :
- include_once 'navbar_en.view.php';?>
-
-
-<?php endif?>
 
 <div>
 

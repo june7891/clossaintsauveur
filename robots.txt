@@ -1,0 +1,3 @@
+user-agent: *
+Dissallow: /Admin/*
+Dissallow: /database_connection.php

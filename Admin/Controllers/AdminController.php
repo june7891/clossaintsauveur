@@ -36,19 +36,19 @@ class AdminController {
                 if ($loggedInUser) {
                     //Create session
                     $_SESSION['access'] = "admin";
-                    header('Location: '.URL."css-admin/dashboard");
+                    header('Location: '.URL."dashboard");
                   
                 } else {
                     flash("login", "Pseudo ou mot de passe incorrect!");
-                    header('Location: ' . URL . "css-admin/login");
+                    header('Location: ' . URL . "css-admin");
                 }
             } else {
                 flash("login", "Pseudo/email n'existe pas");
-                header('Location: ' . URL . "css-admin/login");
+                header('Location: ' . URL . "css-admin");
             }
         } else {
             flash('login', "Veuillez remplir tous les champs!");
-            header('Location: ' . URL . "css-admin/login");
+            header('Location: ' . URL . "css-admin");
         }
         
      }
@@ -78,7 +78,7 @@ class AdminController {
         $this->adminRepository->addDbDisponibility($price, $start, $end);
 
 
-        header('Location: '.URL.'css-admin/reservations');
+        header('Location: '.URL.'reservations');
     }
 
     public function addReservation() {
@@ -125,10 +125,10 @@ class AdminController {
         if($interval->days == 3 || $interval->days > 3 ) {
             $this->adminRepository->addDbReservation($name, $price, $start, $end);
 
-            header('Location: '.URL.'css-admin/reservations'); 
+            header('Location: '.URL.'reservations'); 
         } else {
             flash('reservation', "3 jours minimum!");
-            header('Location: '.URL.'css-admin/reservations'); 
+            header('Location: '.URL.'reservations'); 
         }
 
        
@@ -139,16 +139,23 @@ class AdminController {
         $id_reservation = (int)Security::secureHTML($_POST['id']);
 
         $this->adminRepository->deleteDbReservation($id_reservation);
-        header('Location: '.URL.'css-admin/reservations');
+        header('Location: '.URL.'reservations');
 
     }
     public function removeDisponibility() {
         $id_disponibility = (int)Security::secureHTML($_POST['id']);
 
         $this->adminRepository->deleteDbDisponibility($id_disponibility);
-        header('Location: '.URL.'css-admin/reservations');
+        header('Location: '.URL.'reservations');
 
     }
+    // public function modifyDisponibility() {
+    //     $id_disponibility = (int)Security::secureHTML($_POST['id']);
+
+    //     $this->adminRepository->modifyDbDisponibility($id_disponibility);
+    //     header('Location: '.URL.'reservations');
+
+    // }
 
 
 
