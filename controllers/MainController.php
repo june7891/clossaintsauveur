@@ -44,22 +44,24 @@ class MainController {
 
                 // Decode JSON data
                 $response = json_decode($verifyResponse);
-                    if($response->success && $interval->days == 3 || $interval->days > 3 ){
+                    if($response->success && $interval->days == 3 || $interval->days > 3 && $date1 < $date2 ){
 
-                        flash('reservation', "Votre demande de réservation a été bien envoyée!");
+                       
+
+                              
+             $to = "contact@tomajune.com";
+        $from = $email;
+                    $subject = "Demande de réservation";
+
+        $message = $name ." vous a envoyé ce message :" . "\n\n" . $text . "\n\n" . "Réservation souhaitée: du " . $startDate . " au " . $endDate . "\n\n" . "Contact: " . $phoneNumber ;
+
+        $headers = "From:" . $from;
+
+        $mail_status = mail($to,$subject,$message,$headers);
+
+         flash('reservation', "Votre demande de réservation a été bien envoyée!");
 
                         header('Location: ' . URL . "#reservation");
-
-                  
-             // $to = "contact@tomajune.com";
-        // $from = $email;
-
-        // $message = $name ." vous a envoyé ce message :" . "\n\n" . $text . "\n\n" . "Réservation souhaitée: du " . $startDate . " au " . $endDate;
-
-        // $headers = "From:" . $from;
-
-        // $mail_status = mail($to,$phoneNumber,$message,$headers);
-
 
                         $response = array(
                             "status" => "alert-success",
@@ -67,7 +69,7 @@ class MainController {
                         );
                     } else {
 
-                        flash('reservation', "3 nuits minimum!");
+                        flash('reservation', "Votre demande n'a pas pu être envoyé. Veuillez choisir 3 nuits minimum.");
 
                         header('Location: ' . URL . "#reservation");
 
@@ -83,6 +85,7 @@ class MainController {
                 );
                 
                 flash('reservation', "Veuillez cocher la case reCAPTCHA");
+                header('Location: ' . URL . "#reservation");
 
             } 
         }  else{ 
@@ -92,7 +95,7 @@ class MainController {
             );
 
             flash('reservation', "Tous les champs sont obligatoires.");
-
+            header('Location: ' . URL . "#reservation");
         }
 
         // require_once "views/homepage.view.php"; 

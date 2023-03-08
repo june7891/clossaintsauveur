@@ -127,7 +127,7 @@
 
 <div class="d-flex justify-content-center">
   <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#modalDisponibilities">
- Ajouter les dates libres
+ Ajouter les réservations
 </button>
 </div>
 

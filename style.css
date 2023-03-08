@@ -59,7 +59,7 @@ a {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url('assets/images/header-text.webp');
+    background-image: url('assets/images/header-text.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -212,6 +212,15 @@ figcaption {
     height: 10vw;
 }
 
+.error {
+    border: 2px solid #e6e8d4;
+    width: 300px;
+    background-color: rgba(230, 232, 212, 0.5);
+    margin-left:  100px;
+    margin-top: 50px;
+
+}
+
 .footer-info {
     display: flex;
     margin-left: 6vw;
@@ -226,6 +235,11 @@ figcaption {
 
 
 /*calendar styling*/
+
+.calendar-container {
+    margin-left: 100px;
+    margin-right: -200px;
+}
 
 .fc .fc-button-primary {
     background-color:#e6e8d4;
@@ -304,7 +318,7 @@ label {
 
 
     header {
-        background-image: url('assets/images/header-text-770.webp');
+        background-image: url('assets/images/header-text-770.png');
     }
     header img {
         margin-top: 60px;
@@ -398,7 +412,7 @@ label {
 
 
     header {
-        background-image: url('assets/images/header-text-500.webp');
+        background-image: url('assets/images/header-text-500.png');
     }
     .navbar-brand img{
         height: 20vw;
@@ -451,6 +465,10 @@ span {
 
 .contact textarea {
     height: 30vw;
+}
+
+.error {
+    margin-left: 10px;
 }
 
 #calendar {

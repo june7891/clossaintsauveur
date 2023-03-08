@@ -15,8 +15,8 @@
         initialView: 'dayGridMonth',
         height: 380,
         events: 'display_event.php',
-        eventBackgroundColor: '#93bf85',
-        eventBorderColor: '#93bf85',
+        eventBackgroundColor: '#ff6666',
+        eventBorderColor: '#ff6666',
         selectable: false,
 
 

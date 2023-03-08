@@ -63,7 +63,19 @@
         <h2 class="m-4 p-4 text-center"><?php echo $lang['reservations']?></h2>
         <p class="mx-5 text-center reservation-text"><?php echo $lang['reservations-description']?></p>
         <div class="row">
-                <div class="col-md-7">
+
+        <div class="col-md-6 pt-5 mb-4 ">
+
+
+            <?php include('calendar.view.php')?>
+
+            <div></div>
+          </div>
+   
+
+
+
+                <div class="col-md-6">
                   <?php flash('reservation') ?>
                     <form action="sendReservationMessage" method="POST" class="m-5 w-75 ">
                         <div class="row justify-content-between mb-4">
@@ -110,13 +122,9 @@
 
 
 
-              <div class="col-md-5 pt-5 mb-4">
+       
 
-               <?php include('calendar.view.php')?>
-              </div>
-              </div>
-
-
+                </div>
 
 
   
