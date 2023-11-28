@@ -149,6 +149,30 @@ class AdminController {
         header('Location: '.URL.'reservations');
 
     }
+    public function prices() {
+   
+        $prices = $this->adminRepository->getAllPrices();
+    
+        require_once "Admin/admin.views/prices.view.php";
+
+    }
+    public function addPrices() {
+        $id_disponibility = (int)Security::secureHTML($_POST['id']);
+
+        $this->adminRepository->deleteDbDisponibility($id_disponibility);
+        header('Location: '.URL.'reservations');
+
+    }
+    public function removePrices() {
+        $id_disponibility = (int)Security::secureHTML($_POST['id']);
+
+        $this->adminRepository->deleteDbDisponibility($id_disponibility);
+        header('Location: '.URL.'reservations');
+
+    }
+
+
+
     // public function modifyDisponibility() {
     //     $id_disponibility = (int)Security::secureHTML($_POST['id']);
 

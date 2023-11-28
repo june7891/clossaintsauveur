@@ -13,9 +13,10 @@
                 <?php else :?>
 
                 <a class="nav-link" href="<?= URL?>dashboard">Accueil</a>
-                <a class="nav-link" href="<?= URL?> reservations">Réservations</a>
+                <a class="nav-link" href="<?= URL?>reservations">Réservations</a>
+                <a class="nav-link" href="<?= URL?>prices">Tarifs</a>
 
-                <a class="nav-link" href="<?= URL?> logout">Se déconnecter</a>
+                <a class="nav-link" href="<?= URL?>logout">Se déconnecter</a>
 
                 <?php endif?>
 

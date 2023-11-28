@@ -60,6 +60,15 @@ try {
             case "connection":
                 $adminController->connection();
                 break;
+            case "prices":
+                $adminController->getPrices();
+                break;
+            case "addPrices":
+                $adminController->addPrices();
+                break;
+            case "deletePrices":
+                $adminController->deletePrices();
+                break;
             case "reservations":
                 $adminController->getReservations();
                 break;

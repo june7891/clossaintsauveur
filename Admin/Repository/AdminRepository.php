@@ -59,6 +59,15 @@ class AdminRepository extends Database_connection {
 
         return $reservations;
     }
+    public function getAllPrices(){
+        $req = 'SELECT * FROM prices';
+        $statement = $this->getConnexion()->prepare($req);
+        $statement->execute();
+        $prices = $statement->fetchAll(PDO::FETCH_ASSOC);
+        $statement->closeCursor();
+
+        return $prices;
+    }
 
 
     public function getDisponibilities(){
