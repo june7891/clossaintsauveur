@@ -1,8 +1,5 @@
 <?php
-// $hostname = "tomajuy1987.mysql.db";
-// $username = "tomajuy1987";
-// $password = "Zaibaket2018";  
-// $database = "tomajuy1987";
+
 
 $hostname = 'localhost';
 $username = 'root';
