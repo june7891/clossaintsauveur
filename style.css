@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 
 
+* {
+    max-width: 100%;
+}
 
 html, body {
     scroll-behavior: smooth;
@@ -389,7 +392,6 @@ label {
 .footer-info {
     display: block;
     margin-left: 6vw;
-
 }
 
 .footer-info img {
@@ -504,7 +506,8 @@ span {
 }
 
 #calendar {
-    width: 20% !important;
+    width: 100% !important;
+    margin: auto 0 !important;
 }
 .fc .fc-view {
     width: 320px;
@@ -528,23 +531,18 @@ span {
 
 .footer-info {
     display: block;
-    margin-left: 6vw;
-
 }
 
+.footer-info ul {
+    padding-left: 0;
+}
 .footer-info img {
     height: 30vw;
 }
 
-.contact {
-    margin-bottom: 10vw;
-}
 
 .scroll-down {
- 
-
     bottom: 10%;
-
 }
 
 
@@ -557,12 +555,12 @@ span {
     margin-right: 0;
 }
 
-.g-recaptcha {
-    transform:scale(0.76);
-    -webkit-transform:scale(0.76);
+/* .g-recaptcha {
+    transform:scale(0.9);
+    -webkit-transform:scale(0.9);
     transform-origin:0 0;
     -webkit-transform-origin:0 0;
-}
+} */
 }
     
 

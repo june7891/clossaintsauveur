@@ -1,5 +1,6 @@
 <?php ob_start(); ?>
 
+
 <?php require_once "languages/" . $_SESSION['lang'] . ".php";
  ?>
 
@@ -58,15 +59,13 @@
 
 
 
-<section id="reservation" class="contact mx-5">
+<section id="reservation" class="contact mb-5">
 
     <h2 class="m-4 p-4 text-center"><?php echo $lang['reservations']?></h2>
-    <p class="mx-5 text-center reservation-text"><?php echo $lang['reservations-description']?></p>
-    <div class="row">
+    <p class="m-5 text-center reservation-text"><?php echo $lang['reservations-description']?></p>
 
-        <div class="col-md-6 pt-5 mb-4 ">
-
-
+    <div class="row mx-2">
+        <div class="col-md-6 pt-5 mb-4">
             <?php include('calendar.view.php')?>
 
             <div class="d-flex justify-content-center mt-4">
@@ -82,7 +81,7 @@
 
         <div class="col-md-6">
             <?php flash('reservation') ?>
-            <form action="sendReservationMessage" method="POST" class="m-5 w-75 ">
+            <form action="sendReservationMessage" method="POST" class="m-2">
                 <div class="row justify-content-between mb-4">
                     <div class="form-group col-sm-6 flex-column d-flex">
                         <label for="email" class="form-label"><?php echo $lang['email']?></label>

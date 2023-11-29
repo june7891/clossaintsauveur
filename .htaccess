@@ -1,4 +1,6 @@
 
+deny from all
+
 # Activez HTTPS
 RewriteEngine On
 

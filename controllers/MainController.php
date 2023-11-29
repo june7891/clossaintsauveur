@@ -49,15 +49,15 @@ class MainController {
                        
 
                               
-             $to = "contact@tomajune.com";
-        $from = $email;
-                    $subject = "Demande de réservation";
+            $to = "contact@tomajune.com";
+            $from = $email;
+            $subject = "Demande de réservation";
 
-        $message = $name ." vous a envoyé ce message :" . "\n\n" . $text . "\n\n" . "Réservation souhaitée: du " . $startDate . " au " . $endDate . "\n\n" . "Contact: " . $phoneNumber ;
+            $message = $name ." vous a envoyé ce message :" . "\n\n" . $text . "\n\n" . "Réservation souhaitée: du " . $startDate . " au " . $endDate . "\n\n" . "Contact: " . $phoneNumber ;
 
-        $headers = "From:" . $from;
+            $headers = "From:" . $from;
 
-        $mail_status = mail($to,$subject,$message,$headers);
+            $mail_status = mail($to,$subject,$message,$headers);
 
          flash('reservation', "Votre demande de réservation a été bien envoyée!");
 
