@@ -91,5 +91,6 @@ If the tenant does not appear within 24 hours following the arrival date indicat
     "Article-26" => "<b>Article 26 – Smoking : </b> Smoking is strictly prohibited inside the cottage.",
     "arrival-cgv" => "The desired arrival time is 5 p.m. If you cannot respect this schedule, it is essential to notify in advance at 06 10 88 15 66 or clossaintsauveur33@gmail.com in order to indicate your estimated arrival time.",
     "departure-cgv" => "<b>Before your departure  : </b> The cottages must be vacated by 10 a.m. on the day of departure. You are asked to leave the place as clean as possible and to return the equipment entrusted to the place indicated.",
+    "og:description" => "Guest house France Gironde"
 
 );

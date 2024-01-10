@@ -8,18 +8,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
-    <meta name="description" content="Maison d'hôte Gironde - Guest House - Clos Saint Sauveur. Ancien Domaine viticole, situé en plein coeur des Côteaux de
-          Saint Macaire (Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne">
+    <meta name="description"
+        content="Gîte Sud Gironde - Guest House - Clos Saint Sauveur. Ancien Domaine viticole, situé en plein coeur des Côteaux de Saint Macaire (Sud Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#e6e8d4" />
-    <link rel="canonical" href="https://www.clossaintsauveur.eu/">
-    <link rel="manifest" href="manifest.json">
+    <meta property="og:title" content="Clos Saint Sauveur - Gîte Sud Gironde">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.clossaintsauveur.com">
+    <meta property="og:image" content="https://www.clossaintsauveur.com/assets/images/img-facebook.png">
+    <meta property="og:description"
+        content="Gîte Sud Gironde - Guest House - Clos Saint Sauveur. Ancien Domaine viticole, situé en plein coeur des Côteaux de Saint Macaire (Sud Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne">
+    <link rel=" canonical" href="https://www.clossaintsauveur.com/">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="assets/images/logo.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/8bff0007f7.js" crossorigin="anonymous"></script>
     <title><?php echo $lang['title'] ?></title>
 </head>

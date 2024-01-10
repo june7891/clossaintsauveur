@@ -4,7 +4,7 @@
 
 
 
-<h1 class="titles"><?php echo $lang['legal']?></h1>
+<h1 class="titles text-center"><?php echo $lang['legal']?></h1>
 
 <div class="container-fluid">
     <div class="m-5 row">
@@ -13,11 +13,11 @@
             <p>Maison d'hôtes Clos Saint Sauveur</p>
             <p>Gabija URMONAITE ROUX</p>
             <p>8 route de la Magdelaine, Saint-Pierre-d'Aurillac</p>
-            <p>Siren: </p>
+            <p>SIRET: </p>
         </div>
 
         <div class="col-md-6">
-            <h4>Création graphique et développement</h4>
+            <h4>Web design et développement</h4>
             <p>Toma Juneviciute - <a href="https://juunee-concept.com" target="_blank">Juunee Concept | Digital
                     Solutions</a></p>
             <p>SIRET: 97988366700011</p>
@@ -30,12 +30,6 @@
 
     </div>
 
-
-    <div class="container-fluid">
-
-        <img class="img-fluid" src="assets/images/exterieur.jpeg" alt="Clos Saint Sauveur">
-
-    </div>
 
     <div class="m-5">
 

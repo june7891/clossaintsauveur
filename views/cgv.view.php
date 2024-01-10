@@ -2,7 +2,7 @@
  require_once "languages/" . $_SESSION['lang'] . ".php";
 ?>
 <section class="cgv">
-    <h1 class="titles"><?php echo $lang['CGV']?></h1>
+    <h1 class="titles text-center"><?php echo $lang['CGV']?></h1>
 
     <div class="articles-container">
 

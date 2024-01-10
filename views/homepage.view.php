@@ -5,6 +5,10 @@
  ?>
 
 <header>
+    <img class="logo-header" src="<?= URL ?>assets/images/logo-header.svg" alt="logo maison d'hôtes clos saint sauveur">
+
+    <h1 class="title">Clos Saint Sauveur</h1>
+    <h2 class="sub-title">Guest house</h2>
 
 
     <a href="<?= URL ?>#presentation">
@@ -33,7 +37,7 @@
 
     <div class="img-container">
         <figure class="image">
-            <img class="img-fluid" src="assets/images/kitchen.jpg" alt="rdc">
+            <img class="img-fluid" src="assets/images/kitchen-resized.jpg" alt="rdc">
             <figcaption><?php echo $lang['groundFloor']?></figcaption>
         </figure>
         <figure class="image">
@@ -67,12 +71,6 @@
     <div class="row mx-2">
         <div class="col-md-6 pt-5 mb-4">
             <?php include('calendar.view.php')?>
-
-            <div class="d-flex justify-content-center mt-4">
-                <div class="red-square"></div>
-                <p class="legend-text"><?php echo $lang['disponibilities']?></p>
-            </div>
-
 
         </div>
 

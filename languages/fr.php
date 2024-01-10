@@ -8,12 +8,12 @@ $lang = array(
     'reservations' => "Réservations",
     'description' => "Clos Saint Sauveur, ancien Domaine viticole, est situé en plein coeur des Côteaux de
     Saint Macaire (Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne. Notre
-    demeure est à 10 minutes de la sortie d'Autoroute de Langon, 40 minutes de Bordeaux,
+    gîte est à 10 minutes de la sortie d'Autoroute de Langon, 40 minutes de Bordeaux,
     40 minutes de Saint-Emilion et 1h15 de l'Océan Atlantique. Terrasse couverte sous un
     ancien pigeonnier et terrain arboré avec un pin parasol centenaire. Tranquillité et
     quiétude assurées dans un environnent idyllique.",
     "welcome" => "Bienvenue au Clos Saint Sauveur",
-    "house-description" => "Maison de 95 m² avec accès indépendant et grand parking privatif.
+    "house-description" => "Gîte de 95 m² avec accès indépendant et grand parking privatif.
     Logement sur 2 niveaux avec 2 chambres spacieuses de 19 m² et 13 m² aménagées de
     literies grand confort, palier avec bureau, wc et salle de bain. 
     Au rez-de-chaussée, grand pièce de vie de 40 m² avec cuisine toute équipée.
@@ -31,7 +31,7 @@ $lang = array(
     "send" => "Envoyer",
     "disponibilities" => "Non disponible",
     "legal" => "Mentions légales",
-    "CGV" => "CGV",
+    "CGV" => "Conditions Générales de Vente",
     "Article-1" =>"<b>Article 1 – Contrat : </b> Ce contrat de location saisonnière est réservé à l’usage exclusif de la
     location et
     de
@@ -221,4 +221,5 @@ $lang = array(
     demandé
     de
     laisser l’endroit aussi propre que possible et de restituer le matériel confié à l’endroit indiqué.",
+    "og:description" => "Maison d'hôtes Gironde"
 );

@@ -1,7 +1,7 @@
 <?php
 
-require_once "Admin/Controllers/Security.class.php";
-require_once "Admin/functions/functions.php";
+require_once "utils/Security.class.php";
+require_once "utils/functions/functions.php";
 
 class MainController {
 

@@ -5,7 +5,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.0.3/index.global.min.js'></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -14,10 +14,10 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
             height: 380,
-            events: 'display_event.php',
             eventBackgroundColor: '#ff6666',
             eventBorderColor: '#ff6666',
             selectable: false,
+            weekNumberCalculation: 'ISO',
 
 
         })
