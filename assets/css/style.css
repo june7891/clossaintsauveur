@@ -41,10 +41,14 @@ a {
 }
 
 .navbar-brand img {
-  height: 5vw;
-  width: 5vw;
+  height: 70px;
+  width: 75px;
 }
 
+
+.navbar-mobile-logo {
+  display: none;
+}
 #navbar {
   background-color: #e6e8d4;
   position: fixed;
@@ -75,6 +79,8 @@ header {
 }
 
 .logo-header {
+  position: absolute;
+  top: 10vh;
   height: 120px;
 }
 
@@ -100,7 +106,7 @@ header .sub-title {
 
 .scroll-down {
   position: absolute;
-  text-align: center;
+  left: 49%;
   bottom: 10%;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -113,11 +119,6 @@ header .sub-title {
 .scroll-down i {
   font-size: 3vw;
   color: #a3a29e;
-}
-
-header img {
-  margin-top: 80px;
-  height: 150px;
 }
 
 span {
@@ -194,7 +195,7 @@ li i {
 
 .about .presentation {
   padding: 1.5vw 1vw;
-  text-align: center;
+  text-align: justify;
   line-height: 1.2;
   background-color: rgba(230, 232, 212, 0.9);
   width: 500px;
@@ -244,7 +245,8 @@ figcaption {
 }
 
 .social-icons a i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  padding: 5px;
 }
 .social-icons a i:hover {
   color: #5c5a55;
@@ -301,36 +303,74 @@ label {
   font-size: 1.2em;
 }
 
-/* iframe {
-    width: 200px;
-    height: 60px;
-
-} */
-
-.red-square {
-  width: 60px;
-  height: 20px;
-  background-color: #ff6666;
-  border-radius: 5px;
-  margin-right: 20px;
-}
 
 .legend-text {
   font-size: 18px !important;
 }
 
-@media screen and (max-width: 1250px) {
+
+
+/* email template styling */
+
+.email-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#e6e8d4;
+  height: 100vh;
 }
+
+.email-template img {
+  height: 150px;
+  width: 160px;
+  margin-top: 50px;
+}
+
+.information {
+  padding: 20px;
+  border: 1px solid #5c5a55;
+  height: 60%;
+  width: 40%;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+
+.email-template hr {
+  color:#e6e8d4
+}
+
+
+
+
+
 @media screen and (max-width: 1044px) {
   header .title {
     font-size: 4rem;
     line-height: 0;
+    top: 40vh;
+  }
+  header .sub-title {
+    font-size: 2.2rem;
+    top: 45vh;
+  }
+
+  .logo-header {
+    height: 100px;
+    top: 15vh;
   }
 }
 
 @media screen and (max-width: 766px) {
+  header .title {
+    font-size: 2.9rem;
+  }
   .navbar-nav {
     align-items: center;
+ 
+  }
+  .logo-header {
+    height: 75px;
+    top: 23vh;
   }
 
   h1 {
@@ -409,6 +449,33 @@ label {
   .navbar-expand-lg {
     width: 100vw !important;
   }
+  
+  
+
+.navbar-brand img {
+  display: none;
+}
+.navbar-mobile-logo{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  margin-top: 10px;
+}
+.navbar-mobile-logo img {
+  height: 3em;
+}
+  .navbar-toggler {
+    margin-left: 20px;
+    border: 1px solid rgb(44, 44, 44);
+    height: 50px;
+margin-top: 10px;
+  }
+
+.navbar-toggler-icon {
+  width: 2em;
+  height: 2em;
+}
 
   .navbar-brand img {
     height: 20vw;
@@ -427,7 +494,8 @@ label {
 
 
   .logo-header {
-    height: 80px;
+    height: 60px;
+    top: 27vh;
   }
   header .title {
     top: 40vh;
@@ -441,9 +509,13 @@ label {
     font-size: 1.5em;
   }
 
-  /* header img {
-    margin-top: 20px;
-  } */
+.about {
+  background-position: 50%;
+  background-attachment: scroll;
+}
+.about .presentation {
+  background-color: rgba(230, 232, 212, 0.8);
+}
 
   h1 {
     font-size: 50px;
@@ -515,6 +587,7 @@ label {
   .footer-info img {
     height: 30vw;
   }
+
 
   .scroll-down {
     bottom: 10%;

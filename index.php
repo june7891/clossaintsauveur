@@ -45,6 +45,9 @@ try {
             case "sendReservationMessage":
                 $mainController->sendMessage();
                 break;
+            case "email-template":
+                $mainController->getEmailTemplate();
+                break;
        
             default:
             $mainController->getHomepage();

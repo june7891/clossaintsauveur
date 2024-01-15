@@ -5,6 +5,8 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="navbar-mobile-logo py-2" href="<?= URL ?>"><img class="" src="assets/images/logo.png"
+            alt="logo gîte clos saint sauveur"></a>
     <div class="collapse navbar-collapse row" id="navbarNav">
 
         <ul class="languages-container col-md-2 justify-content-center mx-1">
@@ -26,7 +28,8 @@
                 <a class="nav-link" href="<?= URL ?>#presentation"><?php echo $lang['presentation'] ?></a>
             </li>
             <li>
-                <a class="navbar-brand" href="<?= URL ?>"><img class="mx-2" src="assets/images/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="<?= URL ?>"><img class="mx-2" src="assets/images/logo.png"
+                        alt="logo gîte clos saint sauveur"></a>
             </li>
             <li class="nav-item mt-4">
                 <a class="nav-link" href="<?= URL ?>#rooms"><?php echo $lang['house'] ?></a>

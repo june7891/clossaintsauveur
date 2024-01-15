@@ -15,6 +15,9 @@ class MainController {
     public function getCGVPage() {
         require_once "views/cgv.view.php"; 
     }
+    public function getEmailTemplate() {
+        require_once "views/email-template.php"; 
+    }
 
 
     public function sendMessage() {
@@ -47,17 +50,20 @@ class MainController {
                     if($response->success && $interval->days == 3 || $interval->days > 3 && $date1 < $date2 ){
 
                        
-
+                        $logo = '<img src="assets/images/logo.png" alt="">';
                               
-            $to = "contact@tomajune.com";
+            $to = "toma.june@gmail.com";
             $from = $email;
             $subject = "Demande de réservation";
 
-            $message = $name ." vous a envoyé ce message :" . "\n\n" . $text . "\n\n" . "Réservation souhaitée: du " . $startDate . " au " . $endDate . "\n\n" . "Contact: " . $phoneNumber ;
+            $message = file_get_contents("views/email-template.html");
+
+         
 
             $headers = "From:" . $from;
+            $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-            $mail_status = mail($to,$subject,$message,$headers);
+             $mail_status = mail($to,$subject,$message,$headers);
 
          flash('reservation', "Votre demande de réservation a été bien envoyée!");
 

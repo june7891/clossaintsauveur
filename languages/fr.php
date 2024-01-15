@@ -6,8 +6,8 @@ $lang = array(
     "presentation" => "Présentation",
     'house' => "Logement",
     'reservations' => "Réservations",
-    'description' => "Clos Saint Sauveur, ancien Domaine viticole, est situé en plein coeur des Côteaux de
-    Saint Macaire (Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne. Notre
+    'description' => "Notre gîte Clos Saint Sauveur, ancien Domaine viticole, est situé en plein coeur des Côteaux de
+    Saint Macaire (Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne. Le
     gîte est à 10 minutes de la sortie d'Autoroute de Langon, 40 minutes de Bordeaux,
     40 minutes de Saint-Emilion et 1h15 de l'Océan Atlantique. Terrasse couverte sous un
     ancien pigeonnier et terrain arboré avec un pin parasol centenaire. Tranquillité et
@@ -221,5 +221,33 @@ $lang = array(
     demandé
     de
     laisser l’endroit aussi propre que possible et de restituer le matériel confié à l’endroit indiqué.",
-    "og:description" => "Maison d'hôtes Gironde"
+    "og:description" => "Gîte Sud Gironde",
+    "publisher" => "Information éditeur",
+    "legal-name" =>"Gîte Clos Saint Sauveur",
+    "web-design" => "Conception et développement",
+    "hosting" => "Hébergement",
+    "legal-conditions" => "Conditions d'utilisation du site Internet www.clossaintsauveur.com",
+    "legal-conditions-text" => "Le site et chacun des éléments, y compris mais sans limitation les marques, les logos, icônes,
+    infographies, photographies, qui le composent sont protégés au titre de la législation internationale
+    de la propriété intellectuelle. Les contenus figurant sur le site sont la propriété de Gabija Urmonaite
+    Roux. Toute utilisation,
+    reproduction ou représentation, par quelque procédé que ce soit, et sur quelque support que ce soit,
+    de tout ou partie du site et/ou des éléments qui le composent n'est pas autorisée sans le consentement
+    expresse de Gabija Urmonaite Roux.",
+    "personal-data" => "Données personnelles",
+    "personal-data-text" => "D'une façon générale, vous pouvez visiter notre site sur Internet sans avoir à décliner votre identité et
+    à
+    fournir des informations personnelles vous concernant.
+    Cependant, nous pouvons parfois vous demander des informations. Par exemple, pour établir une
+    correspondance.",
+    "links" => "Liens",
+    "links-text" => "Le site peut inclure des liens vers d'autres sites Web ou d'autres sources internet. Dans la mesure où
+    Clos
+    Saint Sauveur ne peut contrôler ces sites et ces sources externes, Clos Saint Sauveur ne peut être tenu
+    pour
+    responsable de la mise à disposition de ces sites et sources externes, et ne peut supporter aucune
+    responsabilité quant au contenu, publicités, produits, services ou tout autre matériel disponible sur ou
+    à
+    partir de ces sites ou sources externes."
+    
 );

@@ -15,10 +15,10 @@
     <meta property="og:title" content="Clos Saint Sauveur - Gîte Sud Gironde">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.clossaintsauveur.com">
-    <meta property="og:image" content="https://www.clossaintsauveur.com/assets/images/img-facebook.png">
+    <meta property="og:image" content="https://www.clossaintsauveur.com/assets/images/img-facebook.jpg">
     <meta property="og:description"
         content="Gîte Sud Gironde - Guest House - Clos Saint Sauveur. Ancien Domaine viticole, situé en plein coeur des Côteaux de Saint Macaire (Sud Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne">
-    <link rel=" canonical" href="https://www.clossaintsauveur.com/">
+    <link rel="canonical" href="https://www.clossaintsauveur.com/">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="assets/images/logo.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -47,7 +47,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();

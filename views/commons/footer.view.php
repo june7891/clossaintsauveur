@@ -8,7 +8,7 @@
                     route de la Magdelaine, Saint-Pierre-d'Aurillac, France</a>
             </li>
             <li><i class="fa-solid fa-phone"></i>
-                <p> (00)33 06 10 88 15 66</p>
+                <p> (00) 33 6 10 88 15 66</p>
             </li>
             <li><i class="fa-solid fa-envelope"></i>
                 <p> clossaintsauveur33@gmail.com</p>
@@ -31,7 +31,7 @@
     </div>
 
     <div class="text-center p-3">
-        © 2023 Created by :
+        © 2024 Created by :
         <a class="text-dark" href="https://juunee-concept.com" target="_blank">Juunee Concept</a>
     </div>
 

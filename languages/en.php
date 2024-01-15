@@ -6,10 +6,10 @@ $lang = array(
     "presentation" => "About us",
     'house' => "Guest House",
     'reservations' => "Reservations",
-    'description' => "Clos Saint Sauveur, former vineyard, is located in the heart of the Coteaux de Saint
+    'description' => "Our guest house Clos Saint Sauveur, former vineyard, is located in the heart of the Coteaux de Saint
     Macaire in the Gironde.
     The view over the surrounding vines and Garonne river valley is unrivalled.
-    Our property is located just ten minutes from the Langon exit on the Autoroute, 40
+    Our guesthouse is located just ten minutes from the Langon exit on the Autoroute, 40
     minutes from Bordeaux, 40 minutes from Saint-Emilion and one hour and fifteen
     minutes from the Atlantic coast.
     The tree-lined garden includes a covered terrace made from a former dovecote and a
@@ -91,6 +91,18 @@ If the tenant does not appear within 24 hours following the arrival date indicat
     "Article-26" => "<b>Article 26 – Smoking : </b> Smoking is strictly prohibited inside the cottage.",
     "arrival-cgv" => "The desired arrival time is 5 p.m. If you cannot respect this schedule, it is essential to notify in advance at 06 10 88 15 66 or clossaintsauveur33@gmail.com in order to indicate your estimated arrival time.",
     "departure-cgv" => "<b>Before your departure  : </b> The cottages must be vacated by 10 a.m. on the day of departure. You are asked to leave the place as clean as possible and to return the equipment entrusted to the place indicated.",
-    "og:description" => "Guest house France Gironde"
+    "og:description" => "Guest house France Gironde",
+    "publisher" => "Publisher information",
+    "legal-name" =>"Guest house Clos Saint Sauveur",
+    "web-design" => "Web design and Developement",
+    "hosting" => "Hosting",
+    "legal-conditions" => "Terms of Use for the website www.clossaintsauveur.com",
+    "legal-conditions-text" => "The site and each of its elements, including but not limited to trademarks, logos, icons, graphics, photographs, are protected under international intellectual property legislation. The content appearing on the site is the property of Gabija Urmonaite Roux. Any use, reproduction, or representation, by any means and on any medium, of all or part of the site and/or its elements is not authorized without the express consent of Gabija Urmonaite Roux",
+    "personal-data" => "Personal Data",
+    "personal-data-text" => "In general, you can visit our website on the Internet without having to disclose your identity and provide personal information about yourself. However, we may sometimes ask you for information. For example, to establish correspondence.",
+    "links" => "Links",
+    "links-text" => "The site may include links to other websites or other internet sources. As Clos Saint Sauveur cannot control these external sites and sources, Clos Saint Sauveur cannot be held responsible for the availability of these external sites and sources, and cannot assume any liability for the content, advertisements, products, services, or any other material available on or from these external sites or sources."
+   
+
 
 );

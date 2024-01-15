@@ -1,3 +1,4 @@
-user-agent: *
-Dissallow: /Admin/*
-Dissallow: /database_connection.php
+User-agent: *
+Disallow: /views/calendar.view.php
+
+Sitemap: https://dev.clossaintsauveur.com/sitemap.xml

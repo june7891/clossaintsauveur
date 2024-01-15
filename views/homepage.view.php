@@ -23,7 +23,7 @@
         <h2 class="text-center welcome" data-aos="fade-right"><?php echo $lang['welcome']?></h2>
 
 
-        <p class="text-center mx-3" data-aos="fade-right"><?php echo $lang['description']?></p>
+        <p class="mx-3" data-aos="fade-right"><?php echo $lang['description']?></p>
 
     </div>
 
@@ -32,20 +32,21 @@
 <section id="rooms" class="images mt-5">
 
     <h2 class="m-4 pt-4 text-center"><?php echo $lang['house']?></h2>
-    <p class="m-5 text-center"><?php echo $lang['house-description']?></p>
+    <p class="m-5"><?php echo $lang['house-description']?></p>
 
 
     <div class="img-container">
         <figure class="image">
-            <img class="img-fluid" src="assets/images/kitchen-resized.jpg" alt="rdc">
+            <img class="img-fluid" src="assets/images/kitchen-resized.jpg"
+                alt="rez-de-chaussée gîte clos saint sauveur">
             <figcaption><?php echo $lang['groundFloor']?></figcaption>
         </figure>
         <figure class="image">
-            <img class="img-fluid" src="assets/images/room-green.jpg" alt="room1">
+            <img class="img-fluid" src="assets/images/room-green.jpg" alt="chambre une gîte clos saint sauveur">
             <figcaption><?php echo $lang['room1']?></figcaption>
         </figure>
         <figure class="image">
-            <img class="img-fluid" src="assets/images/room-2.jpeg" alt="room2">
+            <img class="img-fluid" src="assets/images/room-2.jpeg" alt="chambre deux gîte clos saint sauveur">
             <figcaption><?php echo $lang['room2']?></figcaption>
         </figure>
 
@@ -66,7 +67,7 @@
 <section id="reservation" class="contact mb-5">
 
     <h2 class="m-4 p-4 text-center"><?php echo $lang['reservations']?></h2>
-    <p class="m-5 text-center reservation-text"><?php echo $lang['reservations-description']?></p>
+    <p class="m-5 reservation-text"><?php echo $lang['reservations-description']?></p>
 
     <div class="row mx-2">
         <div class="col-md-6 pt-5 mb-4">
