@@ -19,7 +19,7 @@ class MainController {
         require_once "views/email-template.php"; 
     }
 
-
+ 
     public function sendMessage() {
 
         $email = Security::secureHTML($_POST['email']);
@@ -50,20 +50,73 @@ class MainController {
                     if($response->success && $interval->days == 3 || $interval->days > 3 && $date1 < $date2 ){
 
                        
-                        $logo = '<img src="assets/images/logo.png" alt="">';
-                              
+                       
             $to = "toma.june@gmail.com";
+            // $to = "clossaintsauveur33@gmail.com";
             $from = $email;
-            $subject = "Demande de réservation";
+            $subject = "Demande de réservation sur le site clossaintsauveur.com";
 
-            $message = file_get_contents("views/email-template.html");
+            $message = "<html>
+         <head>
+<title>HTML email</title>
+<style>
+.email-template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#e6e8d4;
+    height: 100vh;
+  }
+  
+  
+  .information {
+    padding: 20px;
+    border: 1px solid #5c5a55;
+    height: 60%;
+    width: 70%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+  }
+  
+  .email-template hr {
+    color:#e6e8d4
+  }
+  </style>
+</head>
+            <body>
+   
+                <div class='email-container'>
+                    <h1>Vous avez reçu une demande de réservation</h1>
+            
+                    <div class='information'>
+                        <p>Nom : $name </p>
+                        <hr>
+                        <p>Email: $email </p>
+                        <hr>
+                        <p>Téléphone: $phoneNumber</p>
+                        <hr>
+                        <p>Date d'arrivée : $startDate</p>
+                        <hr>
+                        <p>Date de départ : $endDate</p>
+                        <hr>
+                        <p>Message : $text</p>
+            
+                    </div>
+                </div>
+            
+            </body>
+            
+            </html>
+            ";
 
          
 
-            $headers = "From:" . $from;
-            $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+            $headers = "From:" . $from ."\r\n";
+            $headers .= "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html; charset=iso-8859-1" . "\r\n";
+        
 
-             $mail_status = mail($to,$subject,$message,$headers);
+            mail($to,$subject,$message,$headers);
 
          flash('reservation', "Votre demande de réservation a été bien envoyée!");
 

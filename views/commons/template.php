@@ -9,15 +9,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
     <meta name="description"
-        content="Gîte Sud Gironde - Guest House - Clos Saint Sauveur. Ancien Domaine viticole, situé en plein coeur des Côteaux de Saint Macaire (Sud Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne">
+        content="Gîte Clos Saint Sauveur, ancien domaine viticole, situé en plein coeur des Côteaux de Saint Macaire (Sud Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#e6e8d4" />
     <meta property="og:title" content="Clos Saint Sauveur - Gîte Sud Gironde">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.clossaintsauveur.com">
-    <meta property="og:image" content="https://www.clossaintsauveur.com/assets/images/img-facebook.jpg">
+    <meta property="og:image" content="https://www.clossaintsauveur.com/assets/images/img-og.jpg">
     <meta property="og:description"
-        content="Gîte Sud Gironde - Guest House - Clos Saint Sauveur. Ancien Domaine viticole, situé en plein coeur des Côteaux de Saint Macaire (Sud Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne">
+        content="Gîte Clos Saint Sauveur, ancien domaine viticole, situé en plein coeur des Côteaux de Saint Macaire (Sud Gironde). Vue imprenable sur le vignoble et la vallée de la Garonne">
     <link rel="canonical" href="https://www.clossaintsauveur.com/">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="assets/images/logo.png" />

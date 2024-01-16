@@ -1,7 +1,7 @@
 <?php
 
 $lang = array(
-    "title" => "Maison d'hôtes - Clos Saint Sauveur",
+    "title" => "Gîte | Clos Saint Sauveur | Sud Gironde",
     "home" => "Accueil",
     "presentation" => "Présentation",
     'house' => "Logement",
