@@ -51,10 +51,11 @@ class MainController {
 
                        
                        
-            $to = "toma.june@gmail.com";
-            // $to = "clossaintsauveur33@gmail.com";
-            $from = $email;
-            $subject = "Demande de réservation sur le site clossaintsauveur.com";
+           
+            $to = "clossaintsauveur33@gmail.com";
+           
+            
+            $subject = "Demande de reservation sur le site Clos Saint Sauveur";
 
             $message = "<html>
          <head>
@@ -111,16 +112,31 @@ class MainController {
 
          
 
-            $headers = "From:" . $from ."\r\n";
-            $headers .= "MIME-Version: 1.0" . "\r\n";
-            $headers .= "Content-type:text/html; charset=iso-8859-1" . "\r\n";
+            // $headers = "From:" . $from ."\r\n";
+            // $headers .= "MIME-Version: 1.0" . "\r\n";
+            // $headers .= "Content-type:text/html; charset=iso-8859-1" . "\r\n";
+
+            $headers[] = "From: no-reply@clossaintsauveur.com";
+            $headers[] = 'MIME-Version: 1.0';
+            $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+       
         
+            // var_dump($headers, $subject);
+            // die;
 
-            mail($to,$subject,$message,$headers);
+            if(mail($to,$subject,$message, implode("\r\n", $headers))){
+                flash('reservation', "Votre demande de réservation a été envoyée!");
+                header('Location: ' . URL . "#reservation");
+            } else {
+                flash('reservation', "problème!");
+                header('Location: ' . URL . "#reservation");
+                
+            }
+            
 
-         flash('reservation', "Votre demande de réservation a été bien envoyée!");
+         
 
-                        header('Location: ' . URL . "#reservation");
+                        
 
                         $response = array(
                             "status" => "alert-success",
@@ -157,6 +173,6 @@ class MainController {
             header('Location: ' . URL . "#reservation");
         }
 
-        // require_once "views/homepage.view.php"; 
+
     }
 }
